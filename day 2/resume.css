@@ -1,0 +1,48 @@
+#profile-pic {
+    float: right;
+    height: 200px;
+    width: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+#about-myself {
+    margin-top: 75px;
+    font-size: 20px;
+    margin-right: 500px;
+    margin-left: 20px;
+}
+
+#my-email {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#my-contact-number{
+    margin-left: 10px;
+    margin-right:20px ;
+    font-size: 20px;
+}
+
+#my-github-name{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#skills {
+    font-size: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+#contact-and-about {
+    background-color: rgb(39, 8, 8);
+    color: white;
+}
+
