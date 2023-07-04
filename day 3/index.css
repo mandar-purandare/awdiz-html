@@ -1,0 +1,23 @@
+#awdiz-iframe{
+    width: 50%;
+}
+
+/* #signup-info {
+    width: 50%;
+}
+
+#date-time-section {
+    width: 50%;
+} */
+
+fieldset {
+    width: 50%;
+}
+
+.fieldset-div {
+    margin-left: 35%;
+}
+
+label {
+    color: blue;
+}

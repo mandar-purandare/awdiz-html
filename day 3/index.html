@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <link rel="stylesheet" href="./index.css">
+    <title>Contact Form</title>
+    <!-- <style>
         .col-blue {
             color: blue;
         }
@@ -14,22 +15,85 @@
         #col-green {
             color: green;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <h1 class="col-blue">Front End Skills</h1>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
-    <h1 class="col-red">Back End Skills</h1>
-    <ol>
-        <li>MongoDB</li>
-        <li>Node js</li>
-    </ol>
-    <div id="col-green">This is a div</div>
-    <!-- iframe tag -->
-    <iframe></iframe>
-    <!-- types of inputs -->
+    <!-- <iframe id="awdiz-iframe" src="https://www.awdiz.in" style="width: 20%;"> -->
+    <form onsubmit="showValuesAndValidate(event)">
+        <ol>
+            <fieldset id="signup-info">
+                <h1>Request call/signup</h1>
+                <div class="fieldset-div">
+                <label for="name">Name</label>
+                <li><input name="name" type="text" placeholder="Please enter your full name.."></li>
+                <label for="email">Email</label>
+                <li><input type="email"  name="email" placeholder="Please enter your email.."></li>
+                <label for="phone-number">Contact Number (alphanumeric)</label>
+                <li><input type="tel" name="phone-number" placeholder="Please enter your contact number.."></li>
+                <label for="number">Contact Number (strictly numeric)</label>
+                <li><input type="number" id="number" name="number" placeholder="Please enter your contact number.."></li>
+                <label for="password">Password</label>
+                <li><input type="password"  name="password" placeholder="Please enter your password here.."></li>
+                <label for="remember-me">Remember Me</label>
+                <li><input id="remember-me" name="remember-me" type="checkbox"></li>
+                </div>
+            </fieldset>
+            
+            <label for="redirect-button" style="color: greenyellow; font-size: 30px;">Back to resume</label>
+            <li><input name="redirect-button" type="button" onclick="backToResume()" value="Back"></li>
+
+            <label for="reset" style="color: red; font-size: 30px;">Reset Form</label>
+            <li><input type="reset" name="reset" id="reset"></li>
+
+            <fieldset id="date-time-section">
+                <h1>Date and time section</h1>
+                <div class="fieldset-div">
+                <label for="date">Select a date</label>
+                <li><input type="date" name="date" id="date"></li>
+                <label for="date-time">Select date and time</label>
+                <li><input type="datetime-local" name="date-time" id="date-time"></li>
+                <label for="time">Time</label>     
+                <li><input type="time" name="time" id="time"></li>
+                <label for="week">Week</label>
+                <li><input type="week" name="week" id="week"></li>
+                <label for="month">Month</label>
+                <li><input type="month" name="month" id="month"></li>
+                </div>
+            </fieldset>
+            
+            
+            <fieldset id="payment-and-rating">
+                <h1>Payment and rating</h1>
+                <div class="fieldset-div">
+                <label for="pay-type">Pay type</label>
+                <li><input type="radio" name="pay-type" id="pay-type-cod" value="cod">COD</li>
+                <li><input type="radio" name="pay-type" id="pay-type-monthly" value="monthly">Monthly</li>
+                <label for="service-satisfaction">How would you rate our service?</label>
+                <li><input type="range" name="service-satisfaction" id="service-satisfaction"></li>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <h1>Miscellaneous</h1>
+                <div class="fieldset-div">
+                    <label for="search">Search</label>
+                    <li><input type="search" name="search" id="search"></li>
+                    <label for="url">URL</label>
+                    <li><input type="url" id="url" name="url"></li>
+                    <label for="file-upload">Upload a file</label>
+                    <li><input type="file" name="file-upload" id="file-upload"></li>
+                    <label for="hidden">Hidden</label>
+                    <li><input type="hidden" name="hidden" id="hidden"></li>
+                    <label for="image">Image</label>
+                    <li><input type="image" name="image" id="image"></li>
+                    <label for="chose-background-color">Chose a background color for this page</label>
+                    <li><input id="chose-background-color" name="chose-background-color" type="color"></li>
+                </div>
+            </fieldset>
+            
+            <li><input type="submit"></li>
+        </ol>
+    </form>
+    <script src="./index.js"></script>
 </body>
 </html>
