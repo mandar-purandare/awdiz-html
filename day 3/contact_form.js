@@ -1,5 +1,4 @@
 function backToResume(){
-    // alert('Hi there, have a great day!');
     window.location.assign('./../day 2/resume.html');
 }
 
@@ -14,4 +13,6 @@ function showValuesAndValidate(event){
     else{
         alert(`Thank you ${name}, your request is sent`);
     }
+
+    
 }

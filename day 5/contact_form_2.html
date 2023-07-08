@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_form_2.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Login/Signup</legend>
+            <label for="name">Name :</label>
+            <input type="text" name="name" required><br><br>
+            <label for="email">Email :</label>
+            <input type="email" name="email" required><br><br>
+            <label for="password">Password :</label>
+            <input type="password" name="password" required><br><br>
+            <label for="user">User type :</label>
+            <input type="text" name="user" value="Visitor" readonly><br><br>
+            <label for="login_or_signup">Select Login/Signup :</label>
+            <select name="login_or_signup" >
+                <option value="login">Login</option>
+                <option value="signup">Signup</option>
+            </select><br><br>
+            <label for="description">About :</label>
+            <textarea name="description"></textarea><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <script src="contact_form_2.js"></script>
+</body>
+</html>
