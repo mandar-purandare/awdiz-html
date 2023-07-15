@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3308ca8b1f.js" crossorigin="anonymous"></script>
+    <title>Mandar Purandare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        #screen {
+            border: 5px solid blue;
+            width: 100%;
+            height: 2000px;
+            background-color: rgb(245,245,245);
+            /* background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        #navbar {
+            width: 80%;
+            border: 5px solid green;
+            height: 70px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            color: black;
+        }
+
+        #right-navi {
+            padding: 20px;
+        }
+
+        #right-navi div {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        #home {
+            width: 80%;
+            margin: auto;
+            /* border: 5px solid red; */
+            height: 600px;
+            color: white;
+            text-align: center;
+            background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #home div {
+            padding-top: 150px;
+        }
+
+        #home div h1 {
+            font-size: 74px;
+        }
+
+        #home div h3 {
+            font-size: 44px;
+        }
+
+        #about {
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            height: 470px;
+            /* border: 5px solid red; */
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            box-shadow: 0px 0px 4px gray;
+        }
+
+        #about-left{
+            /* border: 1px solid red; */
+            height: 340px;
+            padding-top: 64px;
+            padding-left: 48px;
+            width: 522px;
+            margin: 0px 15px;
+            display: flex;
+        }
+
+        #about-right{
+            /* border: 1px solid red; */
+            height: 340px;
+            padding-top: 64px;
+            padding-right: 48px;
+            width: 492px;
+            margin: 0px 15px;
+        }
+
+        #about-logos{
+            height: 40px;
+            width: 100%;
+            padding: 24px 0px;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .logo{
+            height: 30px;
+            width: 30px;
+            margin-right: 15px;
+            border: 3px solid #0078FF;
+            border-radius: 50%;
+            padding-left: 8px;
+            padding-top: 10px;
+        }
+
+        .logo:hover {
+            color: white;
+            background-color: #0078FF;
+            border: 3px solid rgb(245,245,245);
+        }
+
+        .padding-10 {
+            padding: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div class="padding-10">
+                <h1>Mandar Purandare</h1>
+            </div>
+            <div id="right-navi" class="flex">
+                <div>HOME</div>
+                <div>ABOUT</div>
+                <div>SKILLS</div>
+                <div>PROJECTS</div>
+                <div>BLOGS</div>
+                <div>CONTACT ME</div>
+            </div>
+        </div>
+        <div id="home">
+            <div>
+                <h1>Hi, there!</h1>
+                <h1>I'm Mandar Purandare</h1>
+                <h3>Full stack developer</h3>
+            </div>
+        </div>
+        <div id="about">
+            <div id="about-left">
+                <div style="width: 188px; height: 188px; padding-right: 20px;">
+                    <img src="./../images/me_at_cv_party.jpg" style="width: 100%; height: 100%; border-radius: 5px;">
+                </div>
+                <div style="height: 154px; width: 275px;">
+                    <p style="margin-bottom: 20px; font-size: 16px;"><b style="font-weight: 500; font-size: 18px;">Name: </b>Mandar Purandare</p>
+                    <p style="margin-bottom: 20px; font-size: 16px;"><b style="font-weight: 500; font-size: 18px;">Profile: </b>Full Stack Developer</p>
+                    <p style="margin-bottom: 20px; font-size: 16px;"><b style="font-weight: 500; font-size: 18px;">Email: </b>mnpsstack@gmail.com</p>
+                    <p style="margin-bottom: 20px; font-size: 16px;"><b style="font-weight: 500; font-size: 18px;">Phone: </b>+918104441824</p>
+                </div>
+            </div>
+            <div id="about-right">
+                <h1 style="font-size: 32px; font-family: inherit; font-weight: 500;">About me</h1>
+                <div style="border: 2px solid #0078ff; width: 34%;"></div>
+                <p style="font-size: 18px; margin-top: 40px; color: #8988a9; font-weight: 300;">A passionate Full Stack web Developer 🚀 having an experience of building Web applications with JavaScript / ReactJs / Node.js / MongoDB and some other libraries and frameworks</p>
+                <button style="height: 30px; width: 148px; background-color: #0078FF; border: none; color: white; font-size: 16px; margin-top: 24px;">Resume</button>
+                <div id="about-logos">
+                    <div class="logo">
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                    </div>
+                    <div class="logo">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </div>
+                    <div class="logo">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+
+        </div>
+        <div id="project">
+
+        </div>
+        <div id="blog">
+
+        </div>
+        <div id="contact">
+
+        </div>
+    </div>
+</body>
+</html>
