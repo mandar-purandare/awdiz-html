@@ -1,0 +1,27 @@
+h1{
+    opacity: 0.1;
+}
+
+h2{
+    opacity: 0.2;
+}
+
+h3{
+    opacity: 0.3;
+}
+
+h4{
+    opacity: 0.4;
+}
+
+h5{
+    opacity: 0.5;
+}
+
+#repeat{
+    height: 300px;
+    width: 100%;
+    background-image: url(./../images/fullstack_joke.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
