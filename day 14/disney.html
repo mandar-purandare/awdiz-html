@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        #nav > div {
+            border: 1px solid black;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            /* justify-content: space-around; */
+            /* margin-right: 10%; */
+            overflow: hidden;
+            
+        }
+
+        #nav >div :nth-child(1){
+            display: none ;
+        }
+
+        #nav > div > div {
+            height: 100%;
+            padding-top: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: NotoSans, NotoSerif, Matterhorn, Helvetica, sans-serif;
+            text-transform: uppercase;
+            width: 100px;
+            margin-left: 10px;
+            /* word-wrap: initial; */
+        }
+
+        #nav > div > img {
+            height: 100%;
+            margin-left: 20px;
+            margin-top: 0px;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width:770px) {
+
+            #nav > div > div { display: none;}
+
+            #nav > div > img {
+                margin: auto;
+            }
+
+            #nav >div :nth-child(1){
+            display: block ;
+            font-weight: 700;
+            font-size:x-large;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav" style="display: flex; justify-content: space-evenly; overflow: hidden;">
+        <div>
+            <div>=</div>
+            <img src="https://i.pinimg.com/1200x/d7/18/3f/d7183f72078df410f83279c1b7bbc191.jpg">
+            <div>Shop</div>
+            <div>Parks</div>
+            <div>What's New</div> 
+        </div>
+    </nav>
+</body>
+</html>
