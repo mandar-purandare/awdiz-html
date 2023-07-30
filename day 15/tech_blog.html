@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <script src="https://kit.fontawesome.com/3308ca8b1f.js" crossorigin="anonymous"></script>
+    <style>
+        #container{
+            height: 2000px;
+            width: 100%;
+            border: 1px solid red;
+            background: black;
+            color: white;
+        }
+
+        nav{
+            width: 100%;
+            height: 100px;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: space-between
+        }
+
+        nav > div {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid blue;
+            width: 30%;
+            padding-top: 30px;
+            font-family: 'Space Grotesk', 'sans-serif';
+            font-weight: 400;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        nav > div:nth-child(1){
+            width: 10%;
+        }
+
+        nav > div:nth-child(1) > p:nth-child(2){
+            display: none;
+        }
+
+        nav > div:nth-child(2){
+            width: 40%;
+            /* font-family: 'Space Grotesk', 'sans-serif'; */
+        }
+
+        nav > div:nth-child(3){
+            width: 10%;
+            display: flex;
+            padding-top: 40px;
+        }
+
+        #menu-bars{
+            display: none;
+        }
+
+        #container > #top-section {
+            text-align: center;
+        }
+
+        #container > #top-section > img{
+            margin-top: 50px;
+            height: 108px;
+            width: 108px;
+        }
+
+        #container > #top-section > h1 {
+            font-size: 80px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #container > #top-section > p {
+            width: 600px;
+            word-wrap: break-word;
+            margin: auto;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            margin-bottom: 50px;
+            color: rgb(182,182,182);
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        /* #container > #top-section > button */
+        .read-more-button {
+            width: 168px;
+            height: 44px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        #container > #middle-section{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 150px;
+        }
+
+        #container > #middle-section > div {
+            height: 520px;
+            width: 376px;
+            border: 1px solid white;
+        }
+
+        #container > #middle-section > div:nth-child(1){
+            margin-left: 50px;
+        }
+
+        #container > #middle-section > div:nth-child(1) > p:nth-child(1){
+            margin-top: 0%;
+            color: rgb(182,182,182);
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        #container > #middle-section > div:nth-child(1) > h2{
+            font-size: 40px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 200;
+            width: 350px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        #container > #middle-section > div:nth-child(1) > p:nth-child(3){
+            width: 320px;
+            word-wrap: break-word;
+            margin: auto;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            margin-left: 0px;
+            margin-top: 120px;
+            margin-bottom: 50px;
+            color: rgb(182,182,182);
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        #container > #middle-section > div:nth-child(2){
+            position: relative;
+        }
+
+        #container > #middle-section > div:nth-child(2) > img{
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        /* #container > #middle-section > div:nth-child(2) > div */
+        .hover-image-div {
+            width: 300px;
+            height: 444px;
+            background-color:  rgb(182,182,182);
+            position: absolute;
+            top:8%;
+            right:10%;
+        }
+
+        .hover-image-div-img {
+            height: 272px;
+            width: 244px;
+            margin-top: 70px;
+            margin-left: 30px;
+        }
+
+        .hover-image-div-p {
+            color: black;
+            font-family: 'DM Sans', sans-serif;
+            margin-left: 30px;
+            margin-top: 30px;
+            line-height: 5px;
+            font-weight: 400;
+        }
+
+        .hover-image-div-button{
+            margin-left: 70px;
+            position: absolute;
+            bottom: 200px;
+            border: none;
+        }
+
+
+
+        #container > #middle-section > div:nth-child(3){
+            margin-right: 50px;
+            position: relative;
+        }
+
+        #container > #middle-section > div:nth-child(3) > img{
+            height: 100%;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 970px) {
+            #nav-list {
+                display: none;
+            }
+
+            nav > div:nth-child(1) > p:nth-child(1){
+            display: none;
+            }
+
+            nav > div:nth-child(1) > p:nth-child(2){
+            display: block;
+            }
+
+            #social-media-icons{
+                display: none;
+            }
+
+            #menu-bars{
+                display: block;
+                width: 7%;
+                /* padding-right: -100px; */
+                padding-left: 50px;
+                padding-top: 40px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div>
+                <p>Tech Blog</p>
+                <p>BoldM5</p>   
+            </div>
+            <div id="nav-list">
+                <p>Home</p>
+                <p>Blog</p>
+                <p>Articles</p>
+                <p>About Us</p>
+                <p>FAQ</p>
+            </div>
+            <div id="social-media-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div id="menu-bars">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+        </nav>
+        <section id="top-section">
+            <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png">
+            <h1>Tech Blog</h1>
+            <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore
+                voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class="read-more-button">Read more <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
+        </section>
+        <section id="middle-section">
+            <div>
+                <p>TECHNOLOGIES</p>
+                <h2>Most popular articles</h2>
+                <p>Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque dolores dolorum enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit. </p>
+                <button class="read-more-button">Read more <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg">
+                <div class="hover-image-div">
+                    <img class="hover-image-div-img" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg">
+                    <p class="hover-image-div-p">Mobile Phone</p>
+                    <p class="hover-image-div-p">$100.00</p>
+                    <button class="read-more-button hover-image-div-button">See Card <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
+                </div>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg">
+                <div class="hover-image-div">
+                    <img class="hover-image-div-img" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image9.jpg">
+                    <p class="hover-image-div-p">Mobile Phone</p>
+                    <p class="hover-image-div-p">$1500.00</p>
+                    <button class="read-more-button hover-image-div-button">See Card <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
