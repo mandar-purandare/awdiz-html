@@ -216,8 +216,8 @@
             font-family: 'DM Sans', sans-serif;
             font-weight: 400;
             margin-left: 0px;
-            margin-top: 10%;
-            margin-bottom: 50px;
+            margin-top: 30%;
+            margin-bottom: 80px;
             color: rgb(182,182,182);
             font-size: 17px;
             letter-spacing: 1px;
@@ -251,6 +251,190 @@
 
         #container > #middle-section > div:nth-child(3) :hover + .hover-image-div, .hover-image-div:hover{
             display: block;
+        }
+
+        #third-section {
+            display: flex;
+            margin: 50px ;
+        }
+
+        #third-section > div:nth-child(1){
+            width: 580px;
+            height: 97px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #third-section > div:nth-child(1) >h2{
+            font-size: 42px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+
+        #third-section > div:nth-child(2){
+            width: 443px;
+            height: 160px;
+            margin-left: 1%;
+            margin-top: 6%;
+            border-left: 0.4px solid rgb(182,182,182);
+        }
+
+        #third-section > div:nth-child(2) > p{
+            font-size: 18px;
+            font-family: 'DM Sans', sans-serif;
+            padding-left: 17%;
+            color:  rgb(182,182,182);
+        }
+
+        #fourth-section{
+            display: flex;
+            /* justify-content: center; */
+            width: 95%;
+            margin: auto;
+            padding: 80px 0px;
+        }
+
+        #fourth-section > div {
+            height: 260px;
+            width: 188px;
+            border: 1px solid white;
+            margin: 10px;
+        }
+
+        #fourth-section img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #fourth-section h2{
+            font-size: 34px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-top: 0%;
+        }
+
+        #fourth-section p{
+            font-size: 18px;
+            font-family: 'DM Sans', sans-serif;
+            color: #b6b6b6;
+            line-height: 10px;
+        }
+
+        /* #fifth-section{
+            padding: 80px 0px;
+        } */
+
+        #fifth-section h2{
+            font-size: 70px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            border-top: 0.10px solid #282828;
+            border-bottom: 0.10px solid #282828;
+            padding: 14px 0px;
+            margin: 0 15px;
+            letter-spacing: 2px;
+            /* line-height: 200px; */
+        }
+
+        #fifth-section >h2:nth-child(2){
+            text-align: end;
+        }
+
+        #sixth-section{
+            height: 690px;
+            border: 1px solid white;
+            padding: 80px 0px;
+        }
+
+        #sixth-section-img-div, #sixth-section-text-div{
+            display: flex;
+            justify-content: center;
+        }
+
+        #sixth-section-img-div > div {
+            width: 346px;
+            height: 348px;
+            border: 1px solid white;
+            margin: 80px 15px 0px 15px;
+        }
+
+        #sixth-section-text-div > div {
+            width: 348px;
+            height: 64px;
+            border: 1px solid white;
+            margin: 20px 15px;
+        }
+
+        #sixth-section-text-div > div > p{
+            text-decoration: underline;
+            margin: 0px 5px;
+            display: inline;
+        }
+
+        #sixth-section-text-div > div > h3{
+            font-size: 35px;
+            font-weight: 400;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 2px;
+            margin: 0px;
+        }
+
+        #seventh-section{
+            width: 100%;
+            height: 700px;
+            padding: 80px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #seventh-section > div:nth-child(1){
+            width: 343px;
+            height: 298px;
+            padding: 0px 100px;
+            border: 1px solid white;
+            margin: 120px 0px;
+        }
+
+        #seventh-section > div:nth-child(2){
+            height: 540px;
+            width: 773px;
+            border: 1px solid white;
+        }
+
+        #seventh-section > div:nth-child(1) > h3 {
+            font-size: 41px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0px 80px;
+            /* word-spacing: 10px; */
+            /* word-break: break-word; */
+            word-wrap: break-word;
+            letter-spacing: 2px;
+        }
+
+        #seventh-section > div:nth-child(1) > p{
+            margin: 50px 10px 0px 10px;
+            text-align: center;
+            color: #b6b6b6;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            line-height: normal;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+
+        #seventh-section > div:nth-child(2) {
+            position: relative; 
+        }
+
+        .seventh-section-button{
+            position: absolute;
+            left: 40%;
+            top: 45%;
         }
 
         /**************************  TABLET SCREEN  **************************************/
@@ -453,6 +637,77 @@
                     <p class="hover-image-div-p">$1500.00</p>
                     <button class="read-more-button hover-image-div-button">See Card <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
                 </div>
+            </div>
+        </section>
+        <section id="third-section">
+            <div>
+                <h2>Modern compact, perfectly new design</h2>
+            </div>
+            <div>
+                <p>Numquam, quo recusandae sunt voluptates. Assumenda cumque dolorem eius excepturi inventore laboriosam provident quam suscipit voluptate voluptates.</p>
+            </div>
+        </section>
+        <section id="fourth-section">
+            <div>
+                <h2>Our website</h2>
+                <p>Follow us</p>
+                <p>tech@blog.com</p>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image4.jpg">
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image5.jpg">
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg">
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image12.jpg">
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image15.jpg">
+            </div>
+        </section>
+        <section id="fifth-section">
+            <h2>Popular-Tech-Blog</h2>
+            <h2>Useful-Tech-Blog</h2>
+        </section>
+        <section id="sixth-section">
+            <div id="sixth-section-img-div">
+                <div>
+                    <img style="height: 100%; width: 100%; object-fit: cover;" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image10.jpg">
+                </div>
+                <div>
+                    <img style="height: 100%; width: 100%; object-fit: cover;" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg">
+                </div>
+                <div>
+                    <img style="height: 100%; width: 100%; object-fit: cover;" src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg">
+                </div>
+            </div>
+            <div id="sixth-section-text-div">
+                <div>
+                    <p>MOBILE</p><p>EARBUDS</p>
+                    <h3>Smartphones</h3>
+                </div>
+                <div>
+                    <p>MOBILE</p><p>EARBUDS</p>
+                    <h3>Bubs</h3>
+                </div>
+                <div>
+                    <p>MOBILE</p><p>EARBUDS</p>
+                    <h3>Smart watch</h3>
+                </div>
+            </div>
+        </section>
+        <section id="seventh-section">
+            <div>
+                <h3>Read our news</h3>
+                <p>Consectetur adipisicing elit. Architecto atque culpa eius, error est expedita facilis fuga impedit inventore labore laborum neque obcaecati odit, placeat quo quod repellendus tenetur voluptates.</p>
+            </div>
+            <div>
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image11.jpg" style="height: 100%; width: 100%;">
+                <button class="read-more-button seventh-section-button">Read news <i class="fa-solid fa-play" style="padding-left: 15px;"></i></button>
             </div>
         </section>
     </div>
