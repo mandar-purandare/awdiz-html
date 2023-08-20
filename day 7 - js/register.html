@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form onsubmit="register(event)">
+        <label>Name</label>
+        <input type="text" id="name"><br>
+        <label>Email</label>
+        <input type="email" id="email"><br>
+        <label>Password</label>
+        <input type="password" id="password"><br>
+        <label>Confirm Password</label>
+        <input type="password" id="confirmpassword"><br>
+        <input type="submit" value="Register">
+    </form>
+    <button onclick="getusers()">Show users</button>
+    <button onclick="deleteusers()">Delete users</button>
+    <div id="users-div"></div>
+    <script>
+        function register(event){
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirmpassword = document.getElementById('confirmpassword').value;
+            
+            let blankvalues = (name == '' || email == '' || password == '' || confirmpassword == '');
+            let mismatchpassword = (password != confirmpassword);
+
+            if(!blankvalues && !mismatchpassword){
+                // alert('all good');
+                let user = {name, email, password, confirmpassword};
+                
+                var array = JSON.parse(localStorage.getItem("users")) || [];
+                    
+                    array.push(user)
+
+                    localStorage.setItem("users", JSON.stringify(array))
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                    document.getElementById("confirmpassword").value = "";
+            }else if(mismatchpassword){
+                alert('password doesnt match');
+            }else if(blankvalues){
+                alert('all fields are compulsory');
+            }
+            
+        }
+
+        function getusers() {
+            let users = JSON.parse(localStorage.getItem("users"));
+            //console.log(users);
+            let usersdiv = document.getElementById('users-div');
+            
+            for(let i =0; i<users.length; i++){
+                let name = users[i].name;
+                let h2 = document.createElement('h2');
+                h2.textContent = name;
+                usersdiv.appendChild(h2);
+            }
+        }
+
+        function deleteusers(){
+            localStorage.removeItem("users");
+        }
+    </script>
+</body>
+</html>

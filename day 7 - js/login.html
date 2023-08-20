@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form onsubmit="verifylogin(event)">
+        <label>Email</label>
+        <input type="email" id="email"><br>
+        <label>Password</label>
+        <input type="password" id="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <script>
+        function verifylogin(event){
+            event.preventDefault();
+            let email = JSON.stringify(document.getElementById('email').value);
+            let password = JSON.stringify(document.getElementById('password').value);
+
+            let users = JSON.parse(localStorage.getItem("users"));
+            for(let i=0; i<users.length; i++){
+                let registeredEmail = JSON.stringify(users[i].email);
+                let registeredPassword = JSON.stringify(users[i].password);
+
+                if(registeredEmail == email && registeredPassword == password){
+                    alert(`Hi ${users[i].name}, you are logged in successfully!`);
+                    break;
+                }else{
+                    alert(`You are not registered with us, kindly register yourself first`);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
