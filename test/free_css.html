@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffuso</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        #container{
+            height: 2000px;
+            border: 1px solid blue;
+        }
+        nav {
+            height: 3%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #nav-left, #nav-right{
+            /* border: 1px solid black; */
+            height: 50%;
+            width: 50%;
+            margin-top: 1%;
+        }
+        #nav-right{
+            display: flex;
+            justify-content: center;
+        }
+        #nav-right > div{
+            padding: 1%;
+            border-right: 1px solid black;
+        }
+        #section-1{
+            height: 10%;
+            background-color: rgb(226,226,226);
+            /* border: 1px solid black; */
+        }
+        #section-1-logo-and-ad{
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #section-1-logo, #section-1-ad{
+            /* border: 1px solid blue; */
+            width: 50%;
+        }
+        #section-1-logo{
+            text-align: center;
+        }
+        #section-1-ad > img{
+            margin-top: 2%;
+            margin-left: 10%;
+        }
+        #section-1-categories-tab{
+            display: flex;
+            border: 1px solid green;
+            height: 37%;
+            margin-top: 2%;
+        }
+        #section-1-categories{
+            /* border: 1px solid black; */
+            width: 70%;
+            border: 1px solid black;
+            border-radius: 1em 1em 0px 0px;
+            background-color: rgb(51,51,51);
+            display: flex;
+            justify-content: center;
+        }
+        #section-1-categories > div{
+            margin: 1em;
+            margin-top: 2em;
+            color: white;
+            font-weight: 600;
+            font-size: 100%;
+        }
+        .grey-div{
+            border: 1px solid black;
+            width: 15%;
+            background-color: rgb(226,226,226);
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div id="nav-left"></div>
+            <div id="nav-right">
+                <div>Home</div>
+                <div>Submit a Template</div>
+                <div>Contact Us</div>
+                <div>Search</div>
+                <div>Advertise</div>
+            </div>
+        </nav>
+        <section id="section-1">
+            <div id="section-1-logo-and-ad">
+                <div id="section-1-logo">
+                    <h1 style="font-size: 4em; margin-right: 0%;">Free CSS</h1>
+                    <p>Free CSS Templates, CSS Layouts & More!</p>
+                </div>
+                <div id="section-1-ad">
+                    <img src="./images/elegantthemes-468x60.gif">
+                </div>
+            </div>
+            <div id="section-1-categories-tab">
+                <div class="grey-div"></div>
+                <div id="section-1-categories">
+                    <div>Free CSS Templates</div>
+                    <div>Premium CSS Templates</div>
+                    <div>Free CSS Layouts</div>
+                    <div>Free CSS Menus</div>
+                </div>
+                <div class="grey-div"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

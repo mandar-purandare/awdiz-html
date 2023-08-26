@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+    <form onsubmit="addProduct(event)">
+        <label>Name</label>
+        <input type="text" id="name"><br>
+        <label>Price</label>
+        <input type="number" id="price"><br>
+        <label>Image</label>
+        <input type="file" id="image"><br>
+        <label>Category</label>
+        <select id="category">
+            <option value="cat1">Cat1</option>
+            <option value="cat2">Cat2</option>
+        </select>
+        <input type="submit" value="Add Item">
+    </form>
+    <script>
+        function addProduct(event){
+                event.preventDefault();
+            let name = document.getElementById('name').value;
+            let price = document.getElementById('price').value;
+            let image = document.getElementById('image').value;
+            let category = document.getElementById('category').value;
+
+            let item = {name, price, image, category};
+
+            localStorage.setItem('item',JSON.stringify(item));
+        }
+    </script>
+</body>
+</html>
