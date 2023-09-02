@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #email, #password{
+            border: none;
+            border-bottom: 1px solid lightgray;
+            outline: none;
+        }
+        tr{
+            height: 50px;
+        }
+        tr > td:nth-child(1){
+            text-align: left;
+        }
+        button{
+            padding: 10px 140px;
+            margin-top: 10px;
+            margin-bottom: 10%;
+            border-radius: 0.5em;
+            border: none;
+        }
+        #modal{
+            width: 30%;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+        }
+        table{
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 7%;
+        }
+        #login-options-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-options{
+            height: 10%;
+            width: 80%;
+            border: 1px solid black;
+            margin: 3%;
+            border-radius: 0.5em;
+        }
+        .login-options h4{
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="modal">
+        <div id="login-options-container">
+            <h3>Get Started</h3>
+            <div class="login-options">
+                <h4>Continue with Google</h4>
+            </div>
+            <div class="login-options">
+                <h4>Continue with Email</h4>
+            </div>
+            <div class="login-options">
+                <h4>Continue with Apple</h4>
+            </div>
+        </div>
+        
+        <form>
+            <table>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+            </table>
+            <br><br>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
