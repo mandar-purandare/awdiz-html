@@ -1,85 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/3308ca8b1f.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        #email, #password{
-            border: none;
-            border-bottom: 1px solid lightgray;
-            outline: none;
+      #email,#password {
+        border: none;
+        border-bottom: 1px solid lightgray;
+        outline: none;
+      }
+      tr {
+        height: 50px;
+      }
+      tr > td:nth-child(1) {
+        text-align: left;
+      }
+      button {
+        padding: 10px 140px;
+        margin-top: 5px;
+        margin-bottom: 5%;
+        border-radius: 0.5em;
+        border: none;
+        display: none;
+      }
+      button:hover {
+        background-color: lightgray;
+      }
+      #modal {
+        width: 30%;
+        border: 1px solid black;
+        text-align: center;
+        margin: auto;
+        border-radius: 0.5em;
+      }
+      table {
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 3%;
+      }
+      /* input:focus + #terms-and-conditions-div{
+            display: none;
         }
-        tr{
-            height: 50px;
-        }
-        tr > td:nth-child(1){
-            text-align: left;
-        }
-        button{
-            padding: 10px 140px;
-            margin-top: 10px;
-            margin-bottom: 10%;
-            border-radius: 0.5em;
-            border: none;
-        }
-        #modal{
-            width: 30%;
-            border: 1px solid black;
-            text-align: center;
-            margin: auto;
-        }
-        table{
-            margin: auto;
-            margin-top: 10%;
-            margin-bottom: 7%;
-        }
-        #login-options-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .login-options{
-            height: 10%;
-            width: 80%;
-            border: 1px solid black;
-            margin: 3%;
-            border-radius: 0.5em;
-        }
-        .login-options h4{
-            
-        }
+        input:focus + form>button{
+            display: block;
+        } */
+      form:focus-within button[type="submit"] {
+        display: block;
+        margin: auto;
+      }
+
+      #login-options-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .login-options {
+        height: 3em;
+        width: 80%;
+        border: 1px solid black;
+        margin: 3%;
+        border-radius: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .login-options:hover {
+        border: none;
+        background-color: lightgray;
+        /* transition: background-color 1000ms; */
+      }
+      .login-options div {
+        width: 10%;
+        height: 70%;
+        margin-left: 5%;
+      }
+
+      .login-options p {
+        margin-right: 30%;
+      }
+      #terms-and-conditions-div {
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        display: block;
+      }
+      #terms-and-conditions-div > span {
+        text-decoration: underline;
+        /* display: inline-block; */
+      }
+      form:focus-within div[id="terms-and-conditions-div"]  {
+        /* display: none;     */
+        color: white;
+        font-size: 0px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="modal">
-        <div id="login-options-container">
-            <h3>Get Started</h3>
-            <div class="login-options">
-                <h4>Continue with Google</h4>
-            </div>
-            <div class="login-options">
-                <h4>Continue with Email</h4>
-            </div>
-            <div class="login-options">
-                <h4>Continue with Apple</h4>
-            </div>
+      <div id="login-options-container">
+        <div style="margin-left: 70%"><p>x</p></div>
+        <h3>Get Started</h3>
+        <div class="login-options">
+          <div>
+            <img
+              src="./images/google_icon.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+          <p>Continue with Google</p>
         </div>
+        <div class="login-options">
+          <div style="margin-top: 5%">
+            <i class="fa-regular fa-envelope fa-xl" style="color: #696969"></i>
+          </div>
+          <p>Continue with Email</p>
+        </div>
+        <div class="login-options">
+          <div style="margin-top: 5%">
+            <i class="fa-brands fa-apple fa-xl" style="color: #000000"></i>
+          </div>
+          <p>Continue with Apple</p>
+        </div>
+      </div>
+
+      <form>
+        <table>
+          <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" id="password" /></td>
+          </tr>
+        </table>
+        <br /><br />
+        <button type="submit">Continue</button>
         
-        <form>
-            <table>
-                <tr>
-                    <td><label>Email</label></td>
-                    <td><input type="email" id="email"></td>
-                </tr>
-                <tr>
-                    <td><label>Password</label></td>
-                    <td><input type="password" id="password"></td>
-                </tr>
-            </table>
-            <br><br>
-            <button type="submit">Continue</button>
-        </form>
+      <div id="terms-and-conditions-div">
+        
+          I agree to the <span>Terms & Conditions</span> &
+          <span>Privacy Policy</span>
+        
+      </div>
     </div>
-</body>
+      </form>
+  </body>
 </html>
