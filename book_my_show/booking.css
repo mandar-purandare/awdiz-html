@@ -3,20 +3,20 @@
 }
 
 #container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 3000px;
     background-color: rgb(242,242,242);
 }
 
 #upper-nav{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 4em;
     display: flex;
     background-color: rgb(51,53,69);
 }
 
 #upper-nav-left{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     width: 60%;
     height: 100%;
     display: flex;
@@ -25,7 +25,7 @@
 #upper-nav-left > div:nth-child(1){
     height: 100%;
     width: 25%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 #upper-nav-left > div:nth-child(1) > img{
@@ -37,7 +37,7 @@
 #upper-nav-left > div:nth-child(2){
     height: 100%;
     width: 75%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
 #upper-nav-search{
     width: 90%;
     height: 60%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     border-radius: 0.5em;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
 }
 
 #upper-nav-right{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     width: 40%;
     height: 100%;
     display: flex;
@@ -71,14 +71,14 @@
 #upper-nav-right > div{
     width: 20%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #upper-nav-area-filter{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 70%;
     width: 80%;
     display: flex;
@@ -88,7 +88,7 @@
 }
 
 #sign-in{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 40%;
     width:70%;
     border-radius: 0.25em;
@@ -101,7 +101,7 @@
 
 #lower-nav{
     height: 3em;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
     color: rgb(195,195,196);
     font-size: 14px;
@@ -109,7 +109,7 @@
 }
 
 #lower-nav-left{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 100%;
     width: 60%;
     display: flex;
@@ -119,7 +119,7 @@
 
 #lower-nav-left > div{
     width: 8%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +130,7 @@
 }
 
 #lower-nav-right{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 100%;
     width: 40%;
     display: flex;
@@ -139,7 +139,7 @@
 }
 
 #lower-nav-right > div{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 100%;
     width: 20%;
     display: flex;
@@ -148,7 +148,7 @@
 }
 
 #title{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 8em;
     background-color: rgb(51,53,69);
     color: white;
@@ -161,7 +161,7 @@
 }
 
 #title > div:nth-child(2){
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 40%;
 }
 
@@ -169,7 +169,7 @@
     height: 50%;
     width: 3%;
     margin-left: 1%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: inline-block;
 }
 
@@ -186,7 +186,7 @@
 }
 
 #filters{
-    border: 1px solid black;
+    /* border : 1px solid black; */
     height: 3.5em;
     display: flex;
     background-color: white;
@@ -197,7 +197,7 @@
 #filters-left-div, #filters-right-div{
     width: 50%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 #filters-left-div{
@@ -207,7 +207,7 @@
 .movie-date-box{
     height: 80%;
     width: 7%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     margin: 2px 3px;
     border-radius: 10%;
     font-size: 70%;
@@ -236,7 +236,7 @@
 #filters-search{
     width: 10%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 #ticket-status-bar{
@@ -264,14 +264,14 @@
 .results-div-left{
     width: 30%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
 }
 
 .heart{
     width: 15%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
     justify-content: center;
 }
@@ -291,7 +291,7 @@
 .theatre{
     width: 60%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 .theatre-name{
@@ -303,37 +303,37 @@
 
 .mobile-ticket-and-food{
     height: 50%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
 }
 
 .mobile-ticket{
     width: 40%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 .food{
     width: 60%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 
 .results-div-right{
     width: 70%;
     height: 100%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 .screens-and-timings{
     height: 65%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
     display: flex;
 }
 
 .screens-and-timings-button{
     width: 12%;
     height: 50%;
-    border: 1px solid black;
+    border : 1px solid black;
     margin-top: 2%;
     margin-left: 2%;
     border-radius: 0.25em;
@@ -362,13 +362,78 @@ footer{
     height: 10%;
     width: 100%;
     margin-top: 2%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
 }
 
 #footer-div-1{
     height: 30%;
-    border: 1px solid black;
+    /* border : 1px solid black; */
+    display: flex;
+    background-color: rgb(49,48,53);
 }
+
+#footer-div-1 > div:nth-child(1){
+    width: 70%;
+    /* border : 1px solid black; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#footer-div-1 > div:nth-child(2){
+    width: 30%;
+    /* border : 1px solid black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contact-today{
+    width: 9em;
+    height: 2.5em;
+    /* border : 1px solid black; */
+    border-radius: 0.25em;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236,94,113);
+    color: white;
+}
+
+#footer-div-2{
+    height: 70%;
+    /* border : 1px solid black; */
+    background-color: rgb(49,48,53);
+}
+
+#footer-div-2 > div {
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons{
+    width: 3%;
+    height: 60%;
+    /* border : 1px solid black; */
+    border-radius: 50%;
+    margin: 0px 5px;
+    background-color: rgb(93,93,95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons:hover{
+    background-color: white;
+}
+
 
 
 
