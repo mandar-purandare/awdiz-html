@@ -1,0 +1,131 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
+#account-details{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 12%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: white;
+}
+
+#greeting-and-picture{
+    /* border: 1px solid black; */
+    height: 30%;
+    background-color: rgb(207,74,95);
+}
+
+#greeting-and-picture > div {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    padding-top: 4%;
+    display: flex;
+}
+
+#profile-picture{
+    border: 2px solid lightgrey;
+    width: 40%;
+    border-radius: 50%;
+    /* height: 30%; */
+}
+
+#greeting{
+    /* border: 1px solid black; */
+    width: 60%;
+    /* height: 30%; */
+}
+
+#email-and-mobile{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+    /* border: 1px solid black; */
+    
+}
+
+#email, #mobile{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mobile > div {
+    margin-right: 4%; 
+    padding: 2%;
+    /* padding-right: 5%; */
+    width: 60%;
+    background-color: rgb(255,228,155);
+    border: transparent;
+    border-radius: 5px;
+}
+
+.details{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 15%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: white;
+}
+
+.details > div {
+    height: 15%;
+    margin-left: 10%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-input{
+    border: 1px solid lightslategray;
+    width: 70%;
+    height: 50%;
+    margin-right: 7%;
+    border-radius: 5px;
+}
+
+.placeholder{
+    font-weight: 400;
+    font-size: 20px;
+    color: lightslategray;
+    opacity: 70%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#identity > div {
+    display: flex;
+}
+
+.user-input-identity{
+    border: 1px solid lightslategray;
+    width: 20%;
+    margin-left: 0%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#married > div {
+    display: flex;
+}
+
+.user-input-married{
+    border: 1px solid lightslategray;
+    width: 20%;
+    margin-left: 0%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#address{
+    height: 20%;
+}
