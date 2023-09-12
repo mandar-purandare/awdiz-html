@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./booking_summary.css">
+    <script src="https://kit.fontawesome.com/3308ca8b1f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div style="display: flex; height: 50%;">
+                <i class="fa-solid fa-chevron-left fa-xl" style="color: #b2b2b2; margin-top: 1em; margin-left: 10px;"></i> 
+                <p style="margin-left: 10px;">OMG 2</p>
+                <div style="margin-left: 10px; margin-top: 10px;"><img src="./images/a_certificate.png"></div>
+                <div style="margin-left: 88%; margin-top: 1.5%;">X</div>
+            </div>
+            <div style="margin-left: 30px; margin-top: 10px; height: 30%; display: flex; justify-content: flex-end; flex-direction: column;">
+                <p style="font-size: 80%;"> Cinepolis: Viviana Mall, Thane | Today, 12 Sep, 10:25 PM</p>
+            </div>
+        </nav>
+        <div id="adult-movie-notice">
+            <p>Adult Movie - Children below 18 years are not allowed.</p>
+        </div>
+        <section id="meal-and-summary">
+            <div id="meal-div">
+                <div id="scroller-div">
+                    <div class="scroller-arrow" id="scroller-arrow-left">
+                        <i class="fa-solid fa-chevron-left fa-xl" style="color: #b2b2b2; margin-top: 0.75em; margin-left: 10px;"></i> 
+                    </div>
+                    <img src="./images/scroller.png" style="height: 100%; width: 100%;">
+                    <div class="scroller-arrow" id="scroller-arrow-right">
+                        <i class="fa-solid fa-chevron-right fa-xl" style="color: #b2b2b2; margin-top: 0.75em; margin-left: 10px;"></i> 
+                    </div>
+                </div>
+                <div id="meal-category-div">
+                    <p>Grab a <span style="color: red;">bite!</span></p>
+                    <p>Prebook Your Meal and Save More!</p>
+                    <div id="meal-category-inner-div">
+                        <div class="meal-category-button" style="color: white; background-color: red;">ALL</div>
+                        <div class="meal-category-button">SNACKS</div>
+                        <div class="meal-category-button">BEVERAGES</div>
+                        <div class="meal-category-button">POPCORN</div>
+                        <div class="meal-category-button">COMBOS</div>
+                    </div>
+                </div>
+                <div id="meal-results-iframe-div">
+                    <iframe src="./meal_options_page.html" height="100%" width="100%" title="Iframe Example"></iframe>
+                </div>
+                <div id="meal-note">
+                    <p style="margin: 0px 30px; margin-top: 30px;">Note</p>
+                    <ol style="margin: 5px 0px">
+                        <li>Images are for representation purposes only.</li>
+                        <li>Prices inclusive of taxes</li>
+                        <li>All nutritional information is indicative, values are per serve as shared by the Cinema and may vary depending on the ingredients and portion size</li>
+                        <li>An average active adult requires 2000 kcal energy per day, however, calorie needs may vary.</li>
+                    </ol>
+                    <p style="margin-left: 30px;">Kids above the age of 3 years will be charged separately.</p>
+                </div>
+            </div>
+            <div id="summary-div">
+                <p id="summary-div-title">BOOKING SUMMARY</p>
+                <div id="ticket-charges">
+                    <div id="ticket-charges-row-1">
+                        <div class="ticket-charges-row-left" style="flex-direction: column;">
+                            <div>EXECUTIV - J3, J4 ( 2 Tickets )</div>
+                            <div>AUDI 9</div>
+                        </div>
+                        <div class="ticket-charges-row-right">Rs. 460.00</div>
+                    </div>
+                    <div id="ticket-charges-row-2">
+                        <div class="ticket-charges-row-left">
+                            <img src="./images/down_button.png" style="width: 1em; height: 1em; margin-right: 0.5em;">
+                            <div>Convenience Fees</div>
+                        </div>
+                        <div class="ticket-charges-row-right">Rs.54.28</div>
+                    </div>
+                    <hr style="width: 80%; ">
+                    <div id="ticket-charges-row-3">
+                        <div class="ticket-charges-row-left">Sub total</div>
+                        <div class="ticket-charges-row-right">Rs.514.28</div>
+                    </div>
+                    <div id="contribution">
+                        <div id="contribution-banner">
+                            <div id="cb-row-1">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div id="cb-row-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

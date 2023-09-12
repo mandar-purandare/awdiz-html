@@ -1,0 +1,160 @@
+#container{
+    background-color: rgb(242,242,242);
+}
+
+nav{
+    border : 1px solid black;
+    height: 5em;
+    background-color: rgb(51,53,69);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#adult-movie-notice{
+    height: 25px; 
+    border: 1px solid black; 
+    display: flex; flex-direction: column; 
+    justify-content: center;
+    color: red;
+    font-size: 80%;
+    background-color: white;
+    position: sticky;
+    top: 6em;
+    z-index: 1;
+}
+
+#adult-movie-notice > p {
+    margin-left: 20px;
+}
+
+#meal-and-summary{
+    height: 1000px;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: white; */
+}
+
+#meal-div{
+    width: 65%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#scroller-div{
+    height: 12%;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+}
+
+.scroller-arrow{
+    height: 30%;
+    width: 4%;
+    top: 30%;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 50%;
+    border-radius: 0.25em;
+    position: absolute;
+}
+
+#scroller-arrow-right{
+    left: 96%;
+}
+
+#summary-div{
+    width: 33%;
+    border: 1px solid black;
+}
+
+#meal-category-div{
+    height: 15%;
+    border: 1px solid black;
+}
+
+#meal-category-div > p:nth-child(1){
+    font-size: 2em;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#meal-category-div > p:nth-child(2){
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+#meal-category-inner-div{
+    display: flex;
+    justify-content: center;
+}
+
+.meal-category-button{
+    padding: 5px;
+    margin: 0px 10px;
+    font-size: 0.70em;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+
+#meal-results-iframe-div{
+    height: 55%;
+    border: 1px solid black;
+}
+
+#meal-note{
+    font-size: 0.75em;
+    color: gray;
+}
+
+#summary-div{
+    background-color: white;
+}
+
+#summary-div-title{
+    margin-left: 30px; 
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+#ticket-charges{
+    height: 40%;
+    border: 1px solid black;
+}
+
+#ticket-charges-row-1, #ticket-charges-row-2, #ticket-charges-row-3 {
+    height: 12%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.ticket-charges-row-left{
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.ticket-charges-row-left, .ticket-charges-row-right{
+    display: flex;
+    padding-left: 10%;
+    font-size: 0.90em;
+}
+
+#contribution{
+    height: 30%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#contribution-banner{
+    width: 85%;
+    border: 1px solid black;
+}
+
