@@ -1,3 +1,7 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
 #container{
     background-color: rgb(242,242,242);
 }
@@ -14,7 +18,7 @@ nav{
 
 #adult-movie-notice{
     height: 25px; 
-    border: 1px solid black; 
+    /* border: 1px solid black; */ 
     display: flex; flex-direction: column; 
     justify-content: center;
     color: red;
@@ -31,7 +35,7 @@ nav{
 
 #meal-and-summary{
     height: 1000px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -40,13 +44,13 @@ nav{
 
 #meal-div{
     width: 65%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
 }
 
 #scroller-div{
     height: 12%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     display: flex;
 }
@@ -55,7 +59,7 @@ nav{
     height: 30%;
     width: 4%;
     top: 30%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: black;
     opacity: 50%;
     border-radius: 0.25em;
@@ -68,24 +72,24 @@ nav{
 
 #summary-div{
     width: 33%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #meal-category-div{
     height: 15%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #meal-category-div > p:nth-child(1){
     font-size: 2em;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; */ 
     margin-top: 5px;
     margin-bottom: 0;
     text-align: center;
 }
 
 #meal-category-div > p:nth-child(2){
-    /* border: 1px solid black; */
+    /* border: 1px solid black; */ 
     margin-top: 10px;
     text-align: center;
 }
@@ -105,7 +109,7 @@ nav{
 
 #meal-results-iframe-div{
     height: 55%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #meal-note{
@@ -125,19 +129,19 @@ nav{
 
 #ticket-charges{
     height: 40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #ticket-charges-row-1, #ticket-charges-row-2, #ticket-charges-row-3 {
     height: 12%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 
 .ticket-charges-row-left{
     width: 60%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .ticket-charges-row-left, .ticket-charges-row-right{
@@ -148,13 +152,122 @@ nav{
 
 #contribution{
     height: 30%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
 }
 
 #contribution-banner{
     width: 85%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: rgb(242,242,242);
 }
 
+#cb-row-1{
+    height: 40%;
+    margin-top: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+#cb-row-1-left{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+#cb-row-1-right{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid black; */
+}
+
+#cb-row-1-right > p{
+    margin: 0 40%;
+    width: 50%;
+}
+
+#current-state{
+    height: 10%;
+    font-size: 80%;
+    margin-left: 10%;
+}
+
+#amount-payable{
+    height: 10%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255,252,220);
+    font-weight: 500;
+}
+
+#select-ticket-type{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(242,242,242);
+}
+
+#stt-title{
+    height: 20%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#stt-options-div{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#stt-options-div > div {
+    height: 60%;
+    width: 42%;
+    background-color: white;
+    display: flex;
+    border: 1px solid lightgray;
+}
+
+.select-radio-btn{
+    width: 25%;
+    height: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-radio-btn > div{
+    height: 30%;
+    width: 30%;
+    border: 3px solid rgb(248,68,100);
+    border-radius: 50%;
+}
+
+
+
+#stt-options-div img{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#payment-proceed-button{
+    width: 80%;
+    height: 10%;
+    background-color: rgb(248,68,100);
+    margin-left: 5%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    color: white;
+    font-weight: 500;
+}
+
+#filler-div{
+    height: 15%;
+    background-color: rgb(242,242,242);
+}

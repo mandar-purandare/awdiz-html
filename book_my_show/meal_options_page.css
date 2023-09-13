@@ -4,7 +4,7 @@
 
 .row{
     height: 20%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -13,7 +13,7 @@
 .meal-item{
     height: 80%;
     width: 45%;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; */ 
     border-radius: 1em;
     display: flex;
     justify-content: space-around;
@@ -22,7 +22,7 @@
 }
 
 .meal-item-pic{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 80%;
     width: 50%;
 }
